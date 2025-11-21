@@ -1,0 +1,51 @@
+.testimonials {
+    padding: 100px 0;
+    background-color: var(--primary-peach-light);
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--accent-green-dark);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.author {
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.card::before {
+    content: "“";
+    font-family: serif;
+    font-size: 4rem;
+    color: var(--primary-peach);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.5;
+}
